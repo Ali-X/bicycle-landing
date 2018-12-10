@@ -3,16 +3,27 @@
   width: 100%;
   background: url("../img/header.png") no-repeat center top;
   background-size: cover;
+  padding-top: 3.5rem;
 
   &__top {
     text-align: center;
     margin: auto;
-    vertical-align: center;
   }
 
   &__menu-item {
     display: inline-block;
     vertical-align: middle;
+    text-decoration: none;
+    font: bold 13px Lato;
+    color: $font-color;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+    @include linkHoverProperties;
+
+    &:hover {
+      @include linkHoverAnimation;
+    }
   }
 
   &__logo {
@@ -21,5 +32,49 @@
     width: 100px;
     background: url("../img/logo.png") no-repeat center top;
     vertical-align: middle;
+    margin: 0 6.5rem;
+
+    @include linkHoverProperties;
+
+    &:hover {
+      @include linkHoverAnimation;
+    }
+
+    &-top {
+      display: none;
+    }
+  }
+
+  &__separator {
+    margin: 0 3.6rem;
+    font: bold 13px Lato;
+    color: $font-color;
+  }
+}
+
+@media (max-width: 680px) {
+  .header__menu-item {
+    display: block;
+    margin: 5rem 0;
+    font-size: 40px;
+    background-color: $white-transparent-color;
+
+    &:hover {
+      background-color: $white-color;
+    }
+  }
+
+  .header__separator {
+    display: none;
+  }
+
+  .header__logo {
+    &-top {
+      display: inline-block;
+    }
+
+    &-middle {
+      display: none;
+    }
   }
 }

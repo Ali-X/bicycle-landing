@@ -1,0 +1,9 @@
+@mixin linkHoverProperties {
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+
+@mixin linkHoverAnimation {
+  transform: translateY(-8px) rotate(-10deg);
+}
