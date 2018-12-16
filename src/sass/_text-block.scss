@@ -1,0 +1,61 @@
+.text-block {
+  width: 100%;
+  padding: 7rem 28rem;
+  background-color: $light-gray-color;
+  text-align: center;
+
+  &__logo {
+    height: 100%;
+    width: 5rem;
+    margin: auto;
+    background: url("../img/icon1.png") no-repeat center top;
+    background-size: contain;
+
+    @include linkHoverProperties;
+
+    &:hover {
+      @include linkHoverAnimation;
+    }
+  }
+
+  &__title {
+    padding: 3.5rem;
+    color: $dark-gray-color;
+    font: bold 18px 'PT Sans';
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+
+  &__description {
+    color: gray;
+    font: normal 14px 'PT Sans';
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .text-block {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .text-block__description {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 440px) {
+  .text-block {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .text-block__title {
+    font-size: 14px;
+  }
+
+  .text-block__description {
+    font-size: 12px;
+    line-height: 2rem;
+  }
+}
