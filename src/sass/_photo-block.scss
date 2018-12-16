@@ -1,0 +1,56 @@
+.photo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-height: 100%;
+}
+
+.photo-block {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 60rem);
+  grid-gap: 0;
+}
+
+.photo-element {
+  position: relative;
+  overflow: hidden;
+
+  &__text-block {
+    padding: 7rem;
+    background-color: $white-color;
+  }
+
+  &__description {
+    text-align: justify;
+  }
+}
+
+.photo-element1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.photo-element2 {
+  &__logo {
+    background-image: url("../img/icon2.png");
+  }
+}
+
+.photo-element3 {
+  &__logo {
+    background-image: url("../img/icon3.png");
+  }
+}
+
+.photo-element4 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.photo-element6 {
+  &__logo {
+    background-image: url("../img/icon4.png");
+  }
+}
