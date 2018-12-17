@@ -1,9 +1,4 @@
-.photo {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  max-height: 100%;
-}
+
 
 .photo-block {
   display: grid;
@@ -17,13 +12,35 @@
   position: relative;
   overflow: hidden;
 
+  &__img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%)
+  }
+
   &__text-block {
     padding: 7rem;
     background-color: $white-color;
+    max-height: 40rem;
   }
 
   &__description {
     text-align: justify;
+  }
+
+  &__separator {
+    width: 5rem;
+    height: 1px;
+    background-color: $light-gray-color-separator;
+    margin: 4.3rem auto;
   }
 }
 
