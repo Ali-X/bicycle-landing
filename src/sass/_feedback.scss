@@ -138,7 +138,29 @@
   }
 }
 
-@media (max-width: 815px) {
+@media (max-width: 1050px) {
+  .feedback__radio--first, .feedback__option--first:checked ~ .feedback__option-slider {
+    left: 45%;
+  }
+
+  .feedback__radio--third, .feedback__option--third:checked ~ .feedback__option-slider {
+    left: 55%;
+  }
+
+  .feedback__title {
+    padding: 2rem 0;
+  }
+
+  .feedback__name, .feedback__time {
+    font-size: 16px;
+  }
+
+  .feedback__description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 526px) {
   .feedback__radio--first, .feedback__option--first:checked ~ .feedback__option-slider {
     left: 40%;
   }
