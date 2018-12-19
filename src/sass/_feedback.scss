@@ -1,0 +1,139 @@
+.feedback {
+  position: relative;
+  height: 450px;
+  background-color: $light-gray-color;
+
+  &__slide {
+    position: absolute;
+    top: 0;
+    transition: all .4s ease;
+  }
+
+  &__icon {
+    background: url("../img/twitter-icon.png") no-repeat center top;
+  }
+
+  &__name {
+    font-size: 18px;
+    text-transform: none;
+    letter-spacing: normal;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__time {
+    font-size: 18px;
+    text-transform: lowercase;
+    font-weight: normal;
+    color: $gray-color;
+    letter-spacing: normal;
+  }
+
+  &__description {
+    font-size: 24px;
+    font-weight: lighter;
+  }
+
+  &__radio {
+    background: transparent;
+    border: solid $gray-color 1px;
+    border-radius: 50px;
+    z-index: 1;
+    height: 1.1rem;
+    width: 1.1rem;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    bottom: 6.8rem;
+    transform: translateX(-50%);
+
+    &--first {
+      left: 48%;
+    }
+
+    &--second {
+      left: 50%;
+    }
+
+    &--third {
+      left: 52%;
+    }
+  }
+
+  &__option-slider {
+    height: 1.1rem;
+    width: 1.1rem;
+    position: absolute;
+    border-radius: 50px;
+    transition: all .4s ease;
+    z-index: 1;
+    bottom: 6.8rem;
+    left: 48%;
+    transform: translateX(-50%);
+  }
+
+  &__option--first {
+    display: none;
+
+    &:checked ~ .feedback__option-slider {
+      background: $gray-color;
+      left: 48%;
+    }
+
+    &:checked ~ .feedback__slide1 {
+      visibility: visible;
+    }
+
+    &:checked ~ .feedback__slide2 {
+      visibility: hidden;
+    }
+
+    &:checked ~ .feedback__slide3 {
+      visibility: hidden;
+    }
+  }
+
+  &__option--second {
+    display: none;
+
+    &:checked ~ .feedback__option-slider {
+      background: $gray-color;
+      left: 50%;
+    }
+
+    &:checked ~ .feedback__slide1 {
+      visibility: hidden;
+    }
+
+    &:checked ~ .feedback__slide2 {
+      visibility: visible;
+    }
+
+    &:checked ~ .feedback__slide3 {
+      visibility: hidden;
+    }
+  }
+
+  &__option--third {
+    display: none;
+
+    &:checked ~ .feedback__option-slider {
+      background: $gray-color;
+      left: 52%;
+    }
+
+    &:checked ~ .feedback__slide1 {
+      visibility: hidden;
+    }
+
+    &:checked ~ .feedback__slide2 {
+      visibility: hidden;
+    }
+
+    &:checked ~ .feedback__slide3 {
+      visibility: visible;
+    }
+  }
+}

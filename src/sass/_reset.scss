@@ -12,3 +12,8 @@ html {
 .hidden {
   visibility: hidden;
 }
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
