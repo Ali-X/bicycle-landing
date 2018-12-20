@@ -1,0 +1,141 @@
+.shopnow-block {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 26.7rem);
+}
+
+.shopnow-element {
+
+  &:hover > .shopnow-element__overlay {
+    transition: all 0.3s linear 0s;
+    transform: scale(1,1);
+  }
+
+  &__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $green-transparent-color;
+    cursor: pointer;
+    transition: all 0.3s linear 0s;
+    transform: scale(0,1);
+    transform-origin: center top;
+  }
+
+  &__logo {
+    transition: all 0.3s linear 0s;
+    filter: none;
+
+    &:hover {
+      transition: all 0.3s linear 0s;
+      filter: blur(2px);
+    }
+  }
+
+  &__logo:after { //todo
+    content: "Shop Now";
+    font-size: 20px;
+    color: white;
+    //position: absolute;
+    //left: 50%;
+    //bottom: 50%;
+    //transform: translate(-50%, 50%);
+  }
+}
+
+.shopnow-element1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  &__img {
+    height: 26.7rem;
+    width: 26.7rem;
+  }
+}
+
+.shopnow-element2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  &__img {
+    height: 26.7rem;
+    width: 26.7rem;
+  }
+}
+
+.shopnow-element3 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  &__img {
+    height: 53.4rem;
+    width: 26.7rem;
+  }
+}
+
+.shopnow-element4 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+  &__img {
+    height: 53.4rem;
+    width: 26.7rem;
+  }
+}
+
+.shopnow-element5 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 7;
+
+  &__img {
+    width: 53.4rem;
+    height: 26.7rem;
+  }
+}
+
+.shopnow-element6 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  &__img {
+    width: 53.4rem;
+    height: 26.7rem;
+  }
+}
+
+.shopnow-element7 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 5;
+  grid-column-end: 6;
+
+  &__img {
+    height: 26.7rem;
+    width: 26.7rem;
+  }
+}
+
+.shopnow-elemen8 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 6;
+  grid-column-end: 7;
+
+  &__img {
+    height: 26.7rem;
+    width: 26.7rem;
+  }
+}
