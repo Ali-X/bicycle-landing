@@ -1,12 +1,12 @@
 .button-block {
   width: 100%;
-  padding: 7.5rem 0;
   text-align: center;
   background-color: $dark-blue-color;
 
   &__btn {
     display: inline-block;
     padding: 0 11rem;
+    margin: 7.5rem 0;
     font: bold 1.4rem Lato;
     line-height: 4.8rem;
     letter-spacing: 0.2rem;
@@ -45,5 +45,21 @@
       }
     }
   }
+}
 
+@media (max-width: 1190px) {
+  .button-block__btn {
+    padding: 0 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .button-block {
+    padding: 1rem 0;
+  }
+  .button-block__btn {
+    display: block;
+    margin: 5rem 8.3rem;
+    padding: 0;
+  }
 }
