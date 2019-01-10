@@ -313,8 +313,10 @@ a {
 }
 
 .feedback__description {
+  height: 14rem;
   font-size: 24px;
   font-weight: lighter;
+  overflow: hidden;
 }
 
 .feedback__radio {
