@@ -39,14 +39,18 @@
     }
   }
 
-  &__logo:after { //todo
-    content: "Shop Now";
-    font-size: 20px;
+  &__text {
+    position: absolute;
+    left: 50%;
+    top: 60%;
     color: white;
-    //position: absolute;
-    //left: 50%;
-    //bottom: 50%;
-    //transform: translate(-50%, 50%);
+    font: normal 14px Lato;
+    text-transform: uppercase;
+    transform: translate(-50%, 50%);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 

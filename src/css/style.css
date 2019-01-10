@@ -498,10 +498,18 @@ a {
   filter: blur(2px);
 }
 
-.shopnow-element__logo:after {
-  content: "Shop Now";
-  font-size: 20px;
+.shopnow-element__text {
+  position: absolute;
+  left: 50%;
+  top: 60%;
   color: white;
+  font: normal 14px Lato;
+  text-transform: uppercase;
+  transform: translate(-50%, 50%);
+}
+
+.shopnow-element__text:hover {
+  text-decoration: underline;
 }
 
 .shopnow-element1 {
