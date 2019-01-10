@@ -782,3 +782,82 @@ a {
     margin-bottom: 1rem;
   }
 }
+
+.footer {
+  padding: 10rem 25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font: normal 1.39rem Lato;
+  color: #848789;
+  background-color: #f7f7f7;
+}
+
+.footer__small-text {
+  font-size: 1.39rem;
+}
+
+.footer__address {
+  display: inline-block;
+  text-align: left;
+}
+
+.footer__address--city {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.footer__address--street, .footer__address--full {
+  display: block;
+}
+
+.footer__address--street {
+  margin: 0.8rem 0;
+}
+
+.footer__logos {
+  display: inline-block;
+}
+
+.footer__designer {
+  display: inline-block;
+  font-size: 1.39rem;
+}
+
+.footer__logo {
+  margin: 0 1rem;
+  width: 5.5rem;
+  height: 3.6rem;
+  background-image: url("../img/logoYebo.png");
+}
+
+.fa {
+  margin: 0;
+  padding-top: 0.7rem;
+  font-size: 2rem;
+  width: 3.4rem;
+  height: 3.4rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  margin: 0 0.15rem;
+  background: #3B5998;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+}
+
+.fa-pinterest {
+  background: #eb5755;
+}
