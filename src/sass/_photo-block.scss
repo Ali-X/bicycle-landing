@@ -29,9 +29,10 @@
   }
 
   &__text-block {
-    padding: 7rem;
+    padding: 7rem 7rem 0 7rem;
     background-color: $white-color;
     height: 40rem;
+    transition: 0.5s linear;
 
     &:after {
       content: " ";
@@ -39,15 +40,25 @@
       margin: auto;
       width: 1rem;
       height: 1rem;
-      background-color: red;
+      background-color: $white-color;
       transform: rotate(45deg);
+    }
+
+    &:hover {
+      height: 100%;
+
+      .photo-element__description {
+        height: 100%;
+        overflow: visible;
+      }
     }
   }
 
   &__description {
     text-align: justify;
-    max-height: 13rem;
+    height: 13rem;
     overflow: hidden;
+    transition: 0.5s linear;
   }
 
   &__separator {
