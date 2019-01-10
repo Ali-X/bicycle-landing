@@ -101,22 +101,12 @@
 }
 
 @media (max-width: 1170px) {
-  .photo-element__title {
-    font-size: 1.5vw;
-  }
-}
-
-@media (max-width: 1140px) {
-  .photo-element__title {
-    font-size: 1vw;
+  .photo-element__text-block:after {
+    display: none;
   }
 }
 
 @media (max-width: 900px) {
-  .photo-element__title {
-    font-size: initial;
-  }
-
   .photo-block {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 60rem);
@@ -134,11 +124,6 @@
 
   .photo-element__photo {
     width: 100%;
-  }
-}
-
-@media (max-width: 370px) {
-  .photo-element__title {
-    font-size: 4vw;
+    height: 200px;
   }
 }
