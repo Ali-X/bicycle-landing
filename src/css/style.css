@@ -643,3 +643,52 @@ a {
     grid-row-end: 11;
   }
 }
+
+.button-block {
+  width: 100%;
+  padding: 7.5rem 0;
+  text-align: center;
+  background-color: #282f35;
+}
+
+.button-block__btn {
+  display: inline-block;
+  padding: 0 11rem;
+  font: bold 1.4rem Lato;
+  line-height: 4.8rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-size: 0 100%;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button-block__btn:hover {
+  background-size: 100% 100%;
+}
+
+.button-block__btn--green {
+  color: #64c29e;
+  background-image: linear-gradient(#64c29e, #64c29e);
+  border: 1px solid #64c29e;
+}
+
+.button-block__btn--green:hover {
+  color: #282f35;
+  background-color: #64c29e;
+}
+
+.button-block__btn--white {
+  margin: 0 8.3rem;
+  color: #FFFFFF;
+  background-image: linear-gradient(#FFFFFF, #FFFFFF);
+  border: 1px solid #FFFFFF;
+}
+
+.button-block__btn--white:hover {
+  color: #282f35;
+  background-color: #FFFFFF;
+}

@@ -1,0 +1,49 @@
+.button-block {
+  width: 100%;
+  padding: 7.5rem 0;
+  text-align: center;
+  background-color: $dark-blue-color;
+
+  &__btn {
+    display: inline-block;
+    padding: 0 11rem;
+    font: bold 1.4rem Lato;
+    line-height: 4.8rem;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-size: 0 100%;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background-size: 100% 100%;
+    }
+
+    &--green {
+      color: $green-color;
+      background-image: linear-gradient($green-color, $green-color);
+      border: 1px solid $green-color;
+
+      &:hover {
+        color: $dark-blue-color;
+        background-color: $green-color;
+      }
+    }
+
+    &--white {
+      margin: 0 8.3rem;
+      color: $white-color;
+      background-image: linear-gradient($white-color, $white-color);
+      border: 1px solid $white-color;
+
+      &:hover {
+        color: $dark-blue-color;
+        background-color: $white-color;
+      }
+    }
+  }
+
+}
