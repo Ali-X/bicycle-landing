@@ -64,9 +64,9 @@
   }
 }
 
-@media screen and (max-width: 1125px) {
-  .form__item {
-    max-width: 100%;
-    margin-bottom: 3rem;
+@media screen and (max-width: 600px) {
+  .subscribe__form-item, .subscribe__form-input, .subscribe__form-btn {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
