@@ -170,6 +170,10 @@ a {
   overflow: hidden;
 }
 
+.photo-element__title {
+  padding: 2.6rem 0;
+}
+
 .photo-element__img {
   position: absolute;
   left: 0;
@@ -187,11 +191,23 @@ a {
 .photo-element__text-block {
   padding: 7rem;
   background-color: #FFFFFF;
-  max-height: 40rem;
+  height: 40rem;
+}
+
+.photo-element__text-block:after {
+  content: " ";
+  display: block;
+  margin: auto;
+  width: 1rem;
+  height: 1rem;
+  background-color: red;
+  transform: rotate(45deg);
 }
 
 .photo-element__description {
   text-align: justify;
+  max-height: 13rem;
+  overflow: hidden;
 }
 
 .photo-element__separator {
@@ -207,10 +223,12 @@ a {
 }
 
 .photo-element2__logo {
+  height: initial;
   background-image: url("../img/icon2.png");
 }
 
 .photo-element3__logo {
+  height: initial;
   background-image: url("../img/icon3.png");
 }
 
@@ -220,6 +238,7 @@ a {
 }
 
 .photo-element6__logo {
+  height: initial;
   background-image: url("../img/icon4.png");
 }
 
