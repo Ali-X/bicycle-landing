@@ -1,1 +1,1 @@
-# [Github page](https://ali-x.github.io/bicycle-landing/build/)
+# [Github page](https://ali-x.github.io/bicycle-landing/src/)
