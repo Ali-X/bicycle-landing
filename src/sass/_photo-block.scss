@@ -99,3 +99,46 @@
     background-image: url("../img/icon4.png");
   }
 }
+
+@media (max-width: 1170px) {
+  .photo-element__title {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 1140px) {
+  .photo-element__title {
+    font-size: 1vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .photo-element__title {
+    font-size: initial;
+  }
+
+  .photo-block {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 60rem);
+  }
+
+  .photo-element1, .photo-element4, .photo-element6 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .photo-element__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .photo-element__photo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 370px) {
+  .photo-element__title {
+    font-size: 4vw;
+  }
+}
