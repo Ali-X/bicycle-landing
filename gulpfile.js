@@ -2,7 +2,8 @@ var gulp = require("gulp"),
     sass = require("gulp-sass"),
     browserSync = require("browser-sync"),
     plumber = require("gulp-plumber"),
-    rename = require("gulp-rename");
+    rename = require("gulp-rename"),
+    autoprefixer = require('gulp-autoprefixer');
 
 
 
@@ -12,6 +13,10 @@ gulp.task("sass", function() {
         .pipe(plumber())
         .pipe(sass({ outputStyle: "expanded" }))
         .pipe(rename("style.css"))
+        .pipe(autoprefixer({
+          browsers: ['last 20 versions'],
+          cascade: false
+      }))
         .pipe(gulp.dest("src/css"))
         .pipe(browserSync.reload({ stream: true }));
 });
