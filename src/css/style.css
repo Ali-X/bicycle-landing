@@ -67,7 +67,7 @@
   transform: translateY(-8px) rotate(-10deg);
 }
 
-.header__logo-top {
+.header__logo--top {
   display: none;
 }
 
@@ -90,7 +90,7 @@
   .header__separator {
     display: none;
   }
-  .header__logo-top {
+  .header__logo--top {
     display: inline-block;
   }
   .header__logo-middle {

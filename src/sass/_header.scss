@@ -40,7 +40,7 @@
       @include linkHoverAnimation;
     }
 
-    &-top {
+    &--top {
       display: none;
     }
   }
@@ -69,7 +69,7 @@
   }
 
   .header__logo {
-    &-top {
+    &--top {
       display: inline-block;
     }
 
