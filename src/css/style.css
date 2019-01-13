@@ -817,7 +817,7 @@ a {
   color: #848789;
 }
 
-.subscribe__form-input:valid + .subscribe__form-label {
+.subscribe__form-input:valid + .subscribe__form-label, .subscribe__form-input:focus + .subscribe__form-label {
   font-style: normal;
   padding: 0;
   -webkit-transform: translateY(-2.3rem) scale(0.75, 0.75);
