@@ -926,10 +926,29 @@ li {
 }
 
 .footer__logo {
+  display: inline-block;
   margin: 0 1rem;
   width: 5.5rem;
   height: 3.6rem;
+  vertical-align: middle;
   background-image: url("../img/logoYebo.png");
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.footer__logo:hover {
+  -webkit-transform: translateY(-8px) rotate(-10deg);
+  -ms-transform: translateY(-8px) rotate(-10deg);
+  transform: translateY(-8px) rotate(-10deg);
 }
 
 .fa {

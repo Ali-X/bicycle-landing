@@ -41,10 +41,18 @@
   }
 
   &__logo {
+    display: inline-block;
     margin: 0 1rem;
     width: 5.5rem;
     height: 3.6rem;
+    vertical-align: middle;
     background-image: url("../img/logoYebo.png");
+
+    @include linkHoverProperties;
+
+    &:hover {
+      @include linkHoverAnimation;
+    }
   }
 }
 
