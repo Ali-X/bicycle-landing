@@ -115,6 +115,7 @@ html {
 }
 
 a {
+  font-size: inherit;
   color: inherit;
   text-decoration: inherit;
 }
