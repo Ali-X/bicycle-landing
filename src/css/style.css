@@ -71,7 +71,8 @@
   display: none;
 }
 
-.header__separator {
+.header__separator:after {
+  content: ".";
   margin: 0 3.6rem;
   font: bold 13px Lato;
   color: #4d4959;
@@ -88,7 +89,10 @@
     background-color: #FFFFFF;
   }
   .header__separator {
-    display: none;
+    display: block;
+  }
+  .header__separator:after {
+    content: none;
   }
   .header__logo--top {
     display: inline-block;

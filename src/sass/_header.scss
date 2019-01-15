@@ -47,9 +47,12 @@
   }
 
   &__separator {
-    margin: 0 3.6rem;
-    font: bold 13px Lato;
-    color: $font-color;
+    &:after {
+      content: ".";
+      margin: 0 3.6rem;
+      font: bold 13px Lato;
+      color: $font-color;
+    }
   }
 }
 
@@ -66,7 +69,11 @@
   }
 
   .header__separator {
-    display: none;
+    display: block;
+
+    &:after {
+      content: none;
+    }
   }
 
   .header__logo {
