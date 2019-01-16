@@ -7,3 +7,8 @@
 @mixin linkHoverAnimation {
   transform: translateY(-8px) rotate(-10deg);
 }
+
+@mixin setBackgroundImage($image) {
+  background-image: url("../img/" + $image + ".png");
+  background-size: cover;
+}

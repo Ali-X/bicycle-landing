@@ -12,6 +12,7 @@
   }
 
   &__img {
+    opacity: 0;
     height: 100%;
     width: 100%;
   }
@@ -59,6 +60,8 @@
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 2;
+
+  @include setBackgroundImage("photo12");
 }
 
 .shopnow-element2 {
@@ -66,6 +69,8 @@
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
+
+  @include setBackgroundImage("photo11");
 }
 
 .shopnow-element3 {
@@ -73,6 +78,8 @@
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 4;
+
+  @include setBackgroundImage("photo10");
 }
 
 .shopnow-element4 {
@@ -80,6 +87,8 @@
   grid-row-end: 3;
   grid-column-start: 4;
   grid-column-end: 5;
+
+  @include setBackgroundImage("photo9");
 }
 
 .shopnow-element5 {
@@ -87,6 +96,8 @@
   grid-row-end: 2;
   grid-column-start: 5;
   grid-column-end: 7;
+
+  @include setBackgroundImage("photo7");
 }
 
 .shopnow-element6 {
@@ -94,6 +105,8 @@
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 3;
+
+  @include setBackgroundImage("photo13");
 }
 
 .shopnow-element7 {
@@ -101,16 +114,55 @@
   grid-row-end: 3;
   grid-column-start: 5;
   grid-column-end: 6;
+
+  @include setBackgroundImage("photo15");
 }
 
-.shopnow-elemen8 {
+.shopnow-element8 {
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 6;
   grid-column-end: 7;
+
+  @include setBackgroundImage("photo8");
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1000px) {
+  .shopnow-block {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .shopnow-element4 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .shopnow-element5 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .shopnow-element7 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .shopnow-element8 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+
+@media (max-width: 720px) {
   .shopnow-block {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
