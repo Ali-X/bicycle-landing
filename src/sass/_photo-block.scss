@@ -21,6 +21,10 @@
     max-height: 100%;
   }
 
+  &__photo {
+    width: auto;
+  }
+
   &__logo {
     position: absolute;
     left: 50%;
@@ -100,6 +104,17 @@
   }
 }
 
+@media (min-width: 1600px) {
+  .photo-element__img {
+    width: 100%;
+    max-height: none;
+  }
+
+  .photo-element__photo {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1170px) {
   .photo-element__text-block:after {
     display: none;
@@ -120,10 +135,25 @@
   .photo-element__img {
     height: auto;
     width: auto;
+
+    &--vertical {
+      width: 100%;
+      max-height: none;
+    }
   }
 
   .photo-element__photo {
-    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 537px) {
+  .photo-element__photo {
     width: auto;
+  }
+
+  .photo-element__img--vertical {
+    width: inherit;
+    max-height: inherit;
   }
 }
